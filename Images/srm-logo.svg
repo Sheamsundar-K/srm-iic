@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 287" width="630" height="287">
+  <rect width="630" height="287" fill="#0d4fa0" rx="12"/>
+  
+  <!-- Top Header Text -->
+  <text x="315" y="48" font-family="'Times New Roman', Times, serif" font-weight="900" font-size="38" fill="#ffffff" text-anchor="middle" letter-spacing="1">CHENNAI RAMAPURAM</text>
+  
+  <!-- Seal / Emblem on Left -->
+  <g transform="translate(100, 160)">
+    <!-- Outer Gold Ring -->
+    <circle cx="0" cy="0" r="70" fill="none" stroke="#f5c518" stroke-width="7"/>
+    <circle cx="0" cy="0" r="63" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <circle cx="0" cy="0" r="58" fill="#0d4fa0" stroke="#f5c518" stroke-width="2"/>
+    
+    <!-- Tree of Knowledge (SVG Path) -->
+    <g fill="#ffffff">
+      <!-- Tree Crown / Canopy -->
+      <path d="M-5,-12 C-20,-12 -32,-22 -30,-35 C-32,-45 -22,-55 -10,-52 C-5,-62 12,-62 18,-52 C28,-55 38,-42 32,-32 C38,-20 22,-10 10,-12 Z" opacity="0.95"/>
+      <circle cx="-15" cy="-35" r="14"/>
+      <circle cx="5" cy="-42" r="16"/>
+      <circle cx="18" cy="-32" r="13"/>
+      <circle cx="0" cy="-25" r="15"/>
+      <circle cx="-8" cy="-48" r="11"/>
+      <circle cx="12" cy="-48" r="10"/>
+      
+      <!-- Tree Trunk -->
+      <path d="M-4,-14 L4,-14 L6,22 C10,26 16,28 22,30 L20,34 C12,33 4,30 0,26 C-4,30 -12,33 -20,34 L-22,30 C-16,28 -10,26 -6,22 Z"/>
+    </g>
+    
+    <!-- Circular Text around Seal -->
+    <path id="sealTextPath" fill="none" d="M -50,0 A 50,50 0 1,1 50,0 A 50,50 0 1,1 -50,0"/>
+    <text font-family="Arial, sans-serif" font-size="7.5" font-weight="bold" fill="#ffffff" letter-spacing="0.5">
+      <textPath href="#sealTextPath" startOffset="50%" text-anchor="middle">
+        SRM INSTITUTE OF SCIENCE AND TECHNOLOGY
+      </textPath>
+    </text>
+    
+    <!-- Banner Ribbon -->
+    <path d="M-42,32 L42,32 L38,44 L-38,44 Z" fill="#ffffff" stroke="#f5c518" stroke-width="1.5"/>
+    <text x="0" y="41" font-family="Arial, sans-serif" font-size="7" font-weight="bold" fill="#0d4fa0" text-anchor="middle">LEARN · LEAP · LEAD</text>
+  </g>
+  
+  <!-- Main SRM Text -->
+  <text x="415" y="202" font-family="'Times New Roman', Times, serif" font-weight="bold" font-size="145" fill="#ffffff" text-anchor="middle" letter-spacing="-2">SRM</text>
+  
+  <!-- Bottom Text -->
+  <text x="415" y="238" font-family="'Times New Roman', Times, serif" font-weight="bold" font-size="22" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">INSTITUTE OF SCIENCE &amp; TECHNOLOGY</text>
+  <text x="415" y="262" font-family="'Times New Roman', Times, serif" font-style="italic" font-size="16" fill="#ffffff" text-anchor="middle">(Deemed to be University u/s 3 of UGC Act, 1956)</text>
+</svg>
