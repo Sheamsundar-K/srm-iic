@@ -1,0 +1,13 @@
+# Ignore large video files exceeding GitHub 100MB limit
+*.mp4
+*.mov
+*.avi
+*.wmv
+*.mkv
+*.zip
+*.tar.gz
+
+# Ignore system / IDE files
+.DS_Store
+Thumbs.db
+node_modules/

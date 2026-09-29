@@ -1,20 +1,25 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Industry &amp; Innovation Council | SRMIST Ramapuram</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <!-- ===== TOP SCROLL PROGRESS BAR ===== -->
+  <div id="scroll-progress-bar"></div>
 
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar" id="navbar">
-    <div class="container nav-container">
+    <div class="nav-container">
       <a href="#" class="nav-brand">
-        <img src="Images/srm-logo.png" alt="SRM Logo" class="nav-logo-img">
-        <span>SRMIST IIC Ramapuram</span>
+        <img src="Images/image-removebg-preview.png" alt="SRM Logo" class="nav-logo-img">
+        <span>SRM IST IIC Ramapuram</span>
       </a>
       <div class="nav-links" id="navLinks">
         <a href="#about">About</a>
@@ -27,13 +32,45 @@
     </div>
   </nav>
 
+  <!-- ===== SCROLLING ANNOUNCEMENT BAR (BELOW NAVBAR) ===== -->
+  <div class="announcement-bar">
+    <div class="announcement-label">
+      <span class="pulse-dot"></span> ANNOUNCEMENTS
+    </div>
+    <div class="announcement-marquee">
+      <div class="announcement-track">
+        <div class="announcement-item">
+          <span> Applications open for SRMIST Innovation &amp; Sustainability Leadership Awards 2026. Last date to
+            apply: <strong>20<sup>th</sup> May 2026</strong>. <a href="#contact" class="announcement-link">Apply Now
+              →</a></span>
+          <span class="announcement-sep">✦</span>
+          <span> 50+ Active Industry MoUs &amp; Centres of Excellence inaugurated across SRMIST Ramapuram. <a
+              href="#dept-dashboard" class="announcement-link">Explore MoUs →</a></span>
+          <span class="announcement-sep">✦</span>
+        </div>
+        <div class="announcement-item" aria-hidden="true">
+          <span> Applications open for SRMIST Innovation &amp; Sustainability Leadership Awards 2026. Last date to
+            apply: <strong>20<sup>th</sup> May 2026</strong>. <a href="#contact" class="announcement-link">Apply Now
+              →</a></span>
+          <span class="announcement-sep">✦</span>
+          <span> 50+ Active Industry MoUs &amp; Centres of Excellence inaugurated across SRMIST Ramapuram. <a
+              href="#dept-dashboard" class="announcement-link">Explore MoUs →</a></span>
+          <span class="announcement-sep">✦</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ===== HERO ===== -->
   <section class="hero" id="hero">
-    <div class="container">
+    <canvas id="hero-particles"></canvas>
+    <div class="hero-glow-overlay"></div>
+    <div class="container" style="position: relative; z-index: 2;">
       <div class="hero-content">
         <div class="hero-badge">✦ Empowering Innovation at SRMIST Ramapuram</div>
         <h1>Industry &amp; Innovation <span class="highlight">Council</span></h1>
-        <p>Bridging the gap between academia and industry — fostering a culture of innovation, entrepreneurship, and real-world problem solving among students and faculty.</p>
+        <p>Bridging the gap between academia and industry — fostering a culture of innovation, entrepreneurship, and
+          real-world problem solving among students and faculty.</p>
         <div class="hero-buttons">
           <a href="#ecosystem" class="btn btn-primary">Explore Initiatives →</a>
           <a href="#dept-dashboard" class="btn btn-outline">View Department MoUs</a>
@@ -42,15 +79,76 @@
     </div>
   </section>
 
+  <!-- ===== PARTNERS MARQUEE ===== -->
+  <section class="section partners" id="partners">
+    <div class="container">
+      <div class="partners-card">
+        <div class="partners-header-label">Our Collaborators</div>
+        <div class="marquee-wrapper">
+          <div class="marquee-track marquee-left">
+            <div class="marquee-content">
+              <div class="partner-logo"><img src="Images/partners/intel.png" alt="Intel"></div>
+              <div class="partner-logo"><img src="Images/oracle-com-brandmark.svg" alt="Oracle"></div>
+              <div class="partner-logo"><img src="Images/Genesys.jpeg" alt="Genesys"></div>
+              <div class="partner-logo"><img src="Images/partners/snowflake.png" alt="Snowflake"></div>
+              <div class="partner-logo"><img src="Images/Mongodb.jpeg" alt="MongoDB"></div>
+              <div class="partner-logo"><img src="Images/Adani.png" alt="Adani"></div>
+              <div class="partner-logo"><img src="Images/iit madras.png" alt="iit-madras-logo"></div>
+              <div class="partner-logo"><img src="Images/partners/kanini.png" alt="Kanini"></div>
+              <div class="partner-logo"><img src="Images/partners/fortinet.png" alt="Fortinet"></div>
+              <div class="partner-logo"><img src="Images/partners/nasscom.png" alt="Nasscom"></div>
+              <div class="partner-logo"><img src="Images/partners/tukosice.png" alt="TU Kosice"></div>
+              <div class="partner-logo"><img src="Images/partners/atheenapandian.png" alt="Atheenapandian"></div>
+              <div class="partner-logo"><img src="Images/partners/mtrl.png" alt="MTRL"></div>
+              <div class="partner-logo"><img src="Images/partners/xyma.png" alt="XYMA Analytics"></div>
+              <div class="partner-logo"><img src="Images/Zensar.jpeg" alt="Zensar"></div>
+              <div class="partner-logo"><img src="Images/Focus R.jpeg" alt="FocusR"></div>
+              <div class="partner-logo"><img src="Images/Biovision.jpeg" alt="Biovision"></div>
+              <div class="partner-logo"><img src="Images/CYbertracs.jpeg" alt="Cybertracs"></div>
+              <div class="partner-logo"><img src="Images/ECE/image-removebg-preview.png" alt="MiBot Ventures"></div>
+            </div>
+            <div class="marquee-content" aria-hidden="true">
+              <div class="partner-logo"><img src="Images/partners/intel.png" alt="Intel"></div>
+              <div class="partner-logo"><img src="Images/oracle-com-brandmark.svg" alt="Oracle"></div>
+              <div class="partner-logo"><img src="Images/Genesys.jpeg" alt="Genesys"></div>
+              <div class="partner-logo"><img src="Images/partners/snowflake.png" alt="Snowflake"></div>
+              <div class="partner-logo"><img src="Images/Mongodb.jpeg" alt="MongoDB"></div>
+              <div class="partner-logo"><img src="Images/Adani.png" alt="Adani"></div>
+              <div class="partner-logo"><img src="Images/iit madras.png" alt="iit-madras-logo"></div>
+              <div class="partner-logo"><img src="Images/partners/kanini.png" alt="Kanini"></div>
+              <div class="partner-logo"><img src="Images/partners/fortinet.png" alt="Fortinet"></div>
+              <div class="partner-logo"><img src="Images/partners/nasscom.png" alt="Nasscom"></div>
+              <div class="partner-logo"><img src="Images/partners/tukosice.png" alt="TU Kosice"></div>
+              <div class="partner-logo"><img src="Images/partners/atheenapandian.png" alt="Atheenapandian"></div>
+              <div class="partner-logo"><img src="Images/partners/mtrl.png" alt="MTRL"></div>
+              <div class="partner-logo"><img src="Images/partners/xyma.png" alt="XYMA Analytics"></div>
+              <div class="partner-logo"><img src="Images/Zensar.jpeg" alt="Zensar"></div>
+              <div class="partner-logo"><img src="Images/Focus R.jpeg" alt="FocusR"></div>
+              <div class="partner-logo"><img src="Images/Biovision.jpeg" alt="Biovision"></div>
+              <div class="partner-logo"><img src="Images/CYbertracs.jpeg" alt="Cybertracs"></div>
+              <div class="partner-logo"><img src="Images/ECE/image-removebg-preview.png" alt="MiBot Ventures"></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
   <!-- ===== ABOUT ===== -->
   <section class="section about" id="about">
     <div class="container">
       <div class="about-grid">
-        <div class="about-image-placeholder">[ Council Image Placeholder ]</div>
-        <div class="about-text">
+        <div class="about-image-placeholder reveal-left">[ Council Image Placeholder ]</div>
+        <div class="about-text reveal-right">
           <h3>About the Council</h3>
-          <p>The Industry &amp; Innovation Council (IIC) at SRMIST Ramapuram is established under the Ministry of Education's Innovation Cell (MIC) to systematically foster the culture of innovation, startups, and entrepreneurship among students and faculty.</p>
-          <p>The council serves as the central hub for coordinating all innovation and industry-related activities across the campus, creating a vibrant ecosystem that nurtures creativity and transforms ideas into impactful solutions.</p>
+          <p>The Industry &amp; Innovation Council (IIC) at SRMIST Ramapuram is established under the Ministry of
+            Education's Innovation Cell (MIC) to systematically foster the culture of innovation, startups, and
+            entrepreneurship among students and faculty.</p>
+          <p>The council serves as the central hub for coordinating all innovation and industry-related activities
+            across the campus, creating a vibrant ecosystem that nurtures creativity and transforms ideas into impactful
+            solutions.</p>
         </div>
       </div>
     </div>
@@ -58,59 +156,171 @@
 
   <!-- ===== VISION & MISSION ===== -->
   <section class="section vision-mission" id="vision">
+    <div class="vm-ambient-glow vm-ambient-1"></div>
+    <div class="vm-ambient-glow vm-ambient-2"></div>
     <div class="container">
-      <div class="section-header">
+      <div class="section-header reveal">
         <div class="accent-line"></div>
         <h2>Vision &amp; Mission</h2>
         <p>Driving innovation and industry-readiness across the campus</p>
       </div>
+
       <div class="vm-grid">
-        <div class="vm-card">
-          <div class="icon vm-custom-icon"><img src="Images/vision-icon.jpg" alt="Our Vision Icon"></div>
+        <!-- Vision Card -->
+        <div class="vm-card reveal-scale delay-1">
+          <div class="vm-icon-wrapper">
+            <div class="vm-icon-inner">
+              <img src="Images/vision-icon.jpg" alt="Our Vision Icon">
+            </div>
+          </div>
           <h3>Our Vision</h3>
-          <p>To build a thriving innovation ecosystem at SRMIST Ramapuram that empowers students and faculty to become industry-ready innovators, entrepreneurs, and leaders who create real-world impact.</p>
+          <p class="vm-vision-statement">
+            To build a thriving innovation ecosystem at SRMIST Ramapuram that empowers students and faculty to become
+            <strong class="highlight-blue">industry-ready innovators</strong>,
+            <strong class="highlight-blue">entrepreneurs</strong>, and leaders who create
+            <strong class="highlight-blue">real-world impact</strong>.
+          </p>
         </div>
-        <div class="vm-card">
-          <div class="icon vm-custom-icon"><img src="Images/mission-icon.jpg" alt="Our Mission Icon"></div>
+
+        <!-- Mission Card -->
+        <div class="vm-card reveal-scale delay-2">
+          <div class="vm-icon-wrapper">
+            <div class="vm-icon-inner">
+              <img src="Images/mission-icon.jpg" alt="Our Mission Icon">
+            </div>
+          </div>
           <h3>Our Mission</h3>
-          <p>To foster a culture of innovation and entrepreneurship by establishing strong industry-academia linkages, providing mentorship, supporting startups, and enabling hands-on learning through research, projects, and collaboration.</p>
+          <ul class="vm-mission-list">
+            <li class="vm-list-item">
+              <span class="vm-list-badge"></span>
+              <div><strong>Industry-Academia Linkages:</strong> Establishing strong corporate, R&amp;D, and research
+                partnerships.</div>
+            </li>
+            <li class="vm-list-item">
+              <span class="vm-list-badge"></span>
+              <div><strong>Mentorship &amp; Guidance:</strong> Providing expert technical, business, and IP guidance.
+              </div>
+            </li>
+            <li class="vm-list-item">
+              <span class="vm-list-badge"></span>
+              <div><strong>Startup Support:</strong> Supporting and incubating student and faculty ventures.</div>
+            </li>
+            <li class="vm-list-item">
+              <span class="vm-list-badge"></span>
+              <div><strong>Hands-on Learning:</strong> Enabling experiential learning through research, live projects,
+                and hackathons.</div>
+            </li>
+          </ul>
         </div>
       </div>
+
+      <!-- Stats Strip Below Cards -->
+      <div class="vm-stats-strip reveal-scale delay-3">
+        <div class="vm-stat-card">
+          <div class="vm-stat-num impact-number" data-target="25" data-suffix="+">0</div>
+          <div class="vm-stat-label">Startups Supported</div>
+        </div>
+        <div class="vm-stat-card">
+          <div class="vm-stat-num impact-number" data-target="40" data-suffix="+">0</div>
+          <div class="vm-stat-label">Expert Mentors</div>
+        </div>
+        <div class="vm-stat-card">
+          <div class="vm-stat-num impact-number" data-target="150" data-suffix="+">0</div>
+          <div class="vm-stat-label">Student Projects</div>
+        </div>
+        <div class="vm-stat-card">
+          <div class="vm-stat-num impact-number" data-target="80" data-suffix="+">0</div>
+          <div class="vm-stat-label">Workshops &amp; Events</div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- ===== ECOSYSTEM ===== -->
   <section class="section ecosystem" id="ecosystem">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header reveal">
         <div class="accent-line"></div>
         <h2>Centres of Excellence (CoEs)</h2>
         <p>Industry-Partnered Advanced Research &amp; Training Hubs</p>
       </div>
       <div class="eco-grid">
-        <div class="eco-card coe-card">
-          <div class="coe-header coe-purple"><div class="eco-icon"><img src="Images/aiexcellence-icon.jpg" alt="AI Centre of Excellence Icon" class="coe-custom-icon"></div><h4>AI Centre of Excellence</h4></div>
-          <div class="coe-body"><div class="coe-partner">Navigate Labs</div><div class="coe-dept">CSE – BDA/CC</div><p>Inaugurated April 2026. Focus: Generative AI, real-time industry projects, 15-day intensive AI training for students.</p></div>
+        <div class="eco-card coe-card clickable-coe reveal-scale delay-1"
+          onclick="window.location.href='coe-detail.html?id=ai'">
+          <div class="coe-header coe-purple">
+            <div class="eco-icon"><img src="Images/aiexcellence-icon.jpg" alt="AI Centre of Excellence Icon"
+                class="coe-custom-icon"></div>
+            <h4>AI Centre of Excellence</h4>
+          </div>
+          <div class="coe-body">
+            <div class="coe-partner">Navigate Labs</div>
+            <div class="coe-dept">CSE – BDA/CC</div>
+            <div class="coe-action-btn">View Analytics &amp; Dashboard →</div>
+          </div>
         </div>
-        <div class="eco-card coe-card">
-          <div class="coe-header coe-blue"><div class="eco-icon"><img src="Images/edge-icon.png" alt="EDGE Icon" class="coe-custom-icon"></div><h4>EDGE</h4></div>
-          <div class="coe-body"><div class="coe-partner">BeauRoi Technologies Pvt LTD</div><div class="coe-dept">ECE</div><p>Center for electronics innovation, research, industry collaboration, skill development, and global competitiveness.</p></div>
+        <div class="eco-card coe-card clickable-coe reveal-scale delay-2"
+          onclick="window.location.href='coe-detail.html?id=edge'">
+          <div class="coe-header coe-blue">
+            <div class="eco-icon"><img src="Images/edge-icon.png" alt="EDGE Icon" class="coe-custom-icon"></div>
+            <h4>EDGE</h4>
+          </div>
+          <div class="coe-body">
+            <div class="coe-partner">BeauRoi Technologies Pvt LTD</div>
+            <div class="coe-dept">ECE</div>
+            <div class="coe-action-btn">View Analytics &amp; Dashboard →</div>
+          </div>
         </div>
-        <div class="eco-card coe-card">
-          <div class="coe-header coe-orange"><div class="eco-icon"><img src="Images/cybersecurity-icon.png" alt="Cybersecurity Icon" class="coe-custom-icon"></div><h4>Cybersecurity (CCEE)</h4></div>
-          <div class="coe-body"><div class="coe-partner">GUVI · Cybertracs · Fortinet · HTC Global</div><div class="coe-dept">CSE – Cybersecurity</div><p>Advanced cybersecurity training, ethical hacking, SOC simulation, and active research collaboration hub.</p></div>
+        <div class="eco-card coe-card clickable-coe reveal-scale delay-3"
+          onclick="window.location.href='coe-detail.html?id=cybersecurity'">
+          <div class="coe-header coe-orange">
+            <div class="eco-icon"><img src="Images/cybersecurity-icon.png" alt="Cybersecurity Icon"
+                class="coe-custom-icon"></div>
+            <h4>Cybersecurity (CCEE)</h4>
+          </div>
+          <div class="coe-body">
+            <div class="coe-partner">GUVI · Cybertracs · Fortinet · HTC Global</div>
+            <div class="coe-dept">CSE – Cybersecurity</div>
+            <div class="coe-action-btn">View Analytics &amp; Dashboard →</div>
+          </div>
         </div>
-        <div class="eco-card coe-card">
-          <div class="coe-header coe-yellow"><div class="eco-icon"><img src="Images/automation-icon.png" alt="Automation Icon" class="coe-custom-icon"></div><h4>CoE in Automation &amp; Robotics</h4></div>
-          <div class="coe-body"><div class="coe-partner">IPCS Global</div><div class="coe-dept">EEE</div><p>Signed 2024. PLC training, industrial automation, robotics — live project exposure for students and faculty.</p></div>
+        <div class="eco-card coe-card clickable-coe reveal-scale delay-4"
+          onclick="window.location.href='coe-detail.html?id=automation'">
+          <div class="coe-header coe-yellow">
+            <div class="eco-icon"><img src="Images/automation-icon.png" alt="Automation Icon" class="coe-custom-icon">
+            </div>
+            <h4>CoE in Automation &amp; Robotics</h4>
+          </div>
+          <div class="coe-body">
+            <div class="coe-partner">IPCS Global</div>
+            <div class="coe-dept">EEE</div>
+            <div class="coe-action-btn">View Analytics &amp; Dashboard →</div>
+          </div>
         </div>
-        <div class="eco-card coe-card">
-          <div class="coe-header coe-teal"><div class="eco-icon"><img src="Images/nichiin-icon.png" alt="Nichi-In Icon" class="coe-custom-icon"></div><h4>Nichi-In Software Solutions</h4></div>
-          <div class="coe-body"><div class="coe-partner">Nichi-In Software Solutions Pvt. Ltd.</div><div class="coe-dept">Multi-disciplinary</div><p>AI, Healthcare, IoT, Education, Industrial Automation, IT Services and Digital Transformation.</p></div>
+        <div class="eco-card coe-card clickable-coe reveal-scale delay-5"
+          onclick="window.location.href='coe-detail.html?id=nichiin'">
+          <div class="coe-header coe-teal">
+            <div class="eco-icon"><img src="Images/nichiin-icon.png" alt="Nichi-In Icon" class="coe-custom-icon"></div>
+            <h4>Nichi-In Software Solutions</h4>
+          </div>
+          <div class="coe-body">
+            <div class="coe-partner">Nichi-In Software Solutions Pvt. Ltd.</div>
+            <div class="coe-dept">Multi-disciplinary</div>
+            <div class="coe-action-btn">View Analytics &amp; Dashboard →</div>
+          </div>
         </div>
-        <div class="eco-card coe-card">
-          <div class="coe-header coe-red"><div class="eco-icon"><img src="Images/researchlab-icon.png" alt="Research Lab Icon" class="coe-custom-icon"></div><h4>Structural Engg. Research Lab</h4></div>
-          <div class="coe-body"><div class="coe-partner">Dept. of Science &amp; Technology, Govt. of India</div><div class="coe-dept">Civil Engineering</div><p>DST-funded (₹53.09 Lakhs). Research on sustainable construction materials and structural innovation.</p></div>
+        <div class="eco-card coe-card clickable-coe reveal-scale delay-6"
+          onclick="window.location.href='coe-detail.html?id=structural'">
+          <div class="coe-header coe-red">
+            <div class="eco-icon"><img src="Images/researchlab-icon.png" alt="Research Lab Icon"
+                class="coe-custom-icon"></div>
+            <h4>Structural Engg. Research Lab</h4>
+          </div>
+          <div class="coe-body">
+            <div class="coe-partner">Dept. of Science &amp; Technology, Govt. of India</div>
+            <div class="coe-dept">Civil Engineering</div>
+            <div class="coe-action-btn">View Analytics &amp; Dashboard →</div>
+          </div>
         </div>
       </div>
     </div>
@@ -121,332 +331,82 @@
     <div class="container">
       <div class="section-header">
         <div class="accent-line"></div>
-        <h2><img src="Images/mou-icon.jpg" alt="MoU Signing Icon" class="mou-header-icon"> Department MoUs</h2>
+        <h2 class="mou-header-icon"> Department MoUs</h2>
         <p>Click any department to view its industry partnerships</p>
       </div>
 
       <div id="dept-grid-view" class="dept-card-grid">
-
-        <!-- AIML -->
-        <div class="dept-box" id="box-AIML">
-          <div class="dept-box-header" onclick="toggleDeptBox('box-AIML')">
-            <div class="dept-icon-circle"><img src="Images/aiml-icon.jpg" alt="AI &amp; ML Icon" class="dept-custom-icon"></div>
-            <h4>AI &amp; Machine Learning</h4>
-            <div class="close-hint">Click to expand</div>
-          </div>
-          <div class="dept-expand-content">
-            <div class="table-container">
-              <table class="mou-table">
-                <thead><tr><th>Logo</th><th>Company</th><th>About</th><th>MoU Signed</th><th>Status</th></tr></thead>
-                <tbody>
-                  <tr><td><img src="Images/AIML/WhatsApp Image 2026-09-23 at 12.13.36 PM.jpeg" alt="Intel"></td><td>Intel</td><td>Leading semiconductor and computing innovation.</td><td>2024</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/AIML/WhatsApp Image 2026-09-23 at 12.13.44 PM (1).jpeg" alt="Kanini"></td><td>Kanini</td><td>Software solutions and digital transformation.</td><td>2025</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/AIML/WhatsApp Image 2026-09-23 at 12.13.44 PM.jpeg" alt="FocusR"></td><td>FocusR</td><td>AI focused tech solutions.</td><td>2026</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/AIML/WhatsApp Image 2026-09-23 at 2.12.09 PM.jpeg" alt="Zensar"></td><td>Zensar</td><td>Global IT services and consulting.</td><td>2023</td><td><span class="status s-green">Active</span></td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
-        <!-- BDA -->
-        <div class="dept-box" id="box-BDA">
-          <div class="dept-box-header" onclick="toggleDeptBox('box-BDA')">
-            <div class="dept-icon-circle"><img src="Images/bda-icon.jpg" alt="Data Analytics Icon" class="dept-custom-icon"></div>
-            <h4>Big Data Analytics</h4>
-            <div class="close-hint">Click to expand</div>
-          </div>
-          <div class="dept-expand-content">
-            <div class="table-container">
-              <table class="mou-table">
-                <thead><tr><th>Logo</th><th>Company</th><th>About</th><th>MoU Signed</th><th>Status</th></tr></thead>
-                <tbody>
-                  <tr><td><img src="Images/BDA/WhatsApp Image 2026-09-23 at 1.42.13 PM.jpeg" alt="BDA Partner"></td><td>BDA Partner</td><td>Specialized data solutions.</td><td>2024</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/BDA/WhatsApp Image 2026-09-23 at 1.42.14 PM.jpeg" alt="IAT Solutions"></td><td>IAT Solutions</td><td>Information and analytics consulting.</td><td>2025</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/BDA/WhatsApp Image 2026-09-23 at 1.57.13 PM.jpeg" alt="Snowflake"></td><td>Snowflake</td><td>Cloud data platform provider.</td><td>2026</td><td><span class="status s-green">Active</span></td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
-        <!-- Biomedical -->
-        <div class="dept-box" id="box-Biomedical">
-          <div class="dept-box-header" onclick="toggleDeptBox('box-Biomedical')">
-            <div class="dept-icon-circle"><img src="Images/biomedical-icon.jpg" alt="Bio Medical Icon" class="dept-custom-icon"></div>
-            <h4>Bio Medical</h4>
-            <div class="close-hint">Click to expand</div>
-          </div>
-          <div class="dept-expand-content">
-            <div class="table-container">
-              <table class="mou-table">
-                <thead><tr><th>Logo</th><th>Company</th><th>About</th><th>MoU Signed</th><th>Status</th></tr></thead>
-                <tbody>
-                  <tr><td><img src="Images/bio medical/WhatsApp Image 2026-09-23 at 1.41.56 PM.jpeg" alt="Atheenapandian"></td><td>Atheenapandian</td><td>Medical technology provider.</td><td>2024</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/bio medical/WhatsApp Image 2026-09-23 at 1.41.56 PM (1).jpeg" alt="Biovision"></td><td>Biovision Medical Systems</td><td>Medical imaging and solutions.</td><td>2025</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/bio medical/WhatsApp Image 2026-09-23 at 1.41.57 PM.jpeg" alt="TMI Systems"></td><td>TMI Systems</td><td>Healthcare tech integration.</td><td>2026</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/bio medical/WhatsApp Image 2026-09-23 at 1.41.57 PM (1).jpeg" alt="AcadiCell"></td><td>AcadiCell</td><td>Cellular research and biomedics.</td><td>2024</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/bio medical/WhatsApp Image 2026-09-23 at 1.41.57 PM (2).jpeg" alt="Cyrix Healthcare"></td><td>Cyrix Healthcare</td><td>Innovative healthcare technology.</td><td>2025</td><td><span class="status s-green">Active</span></td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
-        <!-- Biotech -->
-        <div class="dept-box" id="box-Biotech">
-          <div class="dept-box-header" onclick="toggleDeptBox('box-Biotech')">
-            <div class="dept-icon-circle"><img src="Images/biotech-icon.png" alt="Biotechnology Icon" class="dept-custom-icon"></div>
-            <h4>Biotechnology</h4>
-            <div class="close-hint">Click to expand</div>
-          </div>
-          <div class="dept-expand-content">
-            <div class="table-container">
-              <table class="mou-table">
-                <thead><tr><th>Logo</th><th>Company</th><th>About</th><th>MoU Signed</th><th>Status</th></tr></thead>
-                <tbody>
-                  <tr><td><img src="Images/Biotech/WhatsApp Image 2026-09-23 at 1.41.44 PM.jpeg" alt="MTRL"></td><td>Micro Therapeutic Research Labs</td><td>Advanced therapeutic research.</td><td>2024</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/Biotech/WhatsApp Image 2026-09-23 at 1.41.44 PM (1).jpeg" alt="SIM"></td><td>SIM Infosystems</td><td>Biotech information systems.</td><td>2025</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/Biotech/WhatsApp Image 2026-09-23 at 1.41.45 PM.jpeg" alt="GeneX"></td><td>GeneX</td><td>Genetics and bioinformatics.</td><td>2026</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/Biotech/WhatsApp Image 2026-09-23 at 1.41.45 PM (1).jpeg" alt="Bioneemtec"></td><td>Bioneemtec</td><td>Bio-agricultural technology.</td><td>2025</td><td><span class="status s-green">Active</span></td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
-        <!-- Civil -->
-        <div class="dept-box" id="box-Civil">
-          <div class="dept-box-header" onclick="toggleDeptBox('box-Civil')">
-            <div class="dept-icon-circle"><img src="Images/civil-icon.jpg" alt="Civil Engineering Icon" class="dept-custom-icon"></div>
-            <h4>Civil Engineering</h4>
-            <div class="close-hint">Click to expand</div>
-          </div>
-          <div class="dept-expand-content">
-            <div class="table-container">
-              <table class="mou-table">
-                <thead><tr><th>Logo</th><th>Company</th><th>About</th><th>MoU Signed</th><th>Status</th></tr></thead>
-                <tbody>
-                  <tr><td><img src="Images/civil/WhatsApp Image 2026-09-23 at 12.03.24 PM.jpeg" alt="IIT Madras"></td><td>IIT Madras</td><td>Leading technical institute.</td><td>2024</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/civil/WhatsApp Image 2026-09-23 at 12.03.24 PM (2).jpeg" alt="TN Govt"></td><td>Tamil Nadu Government</td><td>State infrastructure projects.</td><td>2025</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/civil/WhatsApp Image 2026-09-23 at 12.03.24 PM (3).jpeg" alt="CMIT"></td><td>CMIT</td><td>Construction and structural testing.</td><td>2026</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/civil/WhatsApp Image 2026-09-23 at 12.03.24 PM (4).jpeg" alt="Adani"></td><td>Adani</td><td>Global infrastructure conglomerate.</td><td>2025</td><td><span class="status s-green">Active</span></td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
-        <!-- CS -->
-        <div class="dept-box" id="box-CS">
-          <div class="dept-box-header" onclick="toggleDeptBox('box-CS')">
-            <div class="dept-icon-circle"><img src="Images/csc-icon.jpg" alt="Computer Science Icon" class="dept-custom-icon"></div>
-            <h4>Computer Science</h4>
-            <div class="close-hint">Click to expand</div>
-          </div>
-          <div class="dept-expand-content">
-            <div class="table-container">
-              <table class="mou-table">
-                <thead><tr><th>Logo</th><th>Company</th><th>About</th><th>MoU Signed</th><th>Status</th></tr></thead>
-                <tbody>
-                  <tr><td><img src="Images/CS/WhatsApp Image 2026-09-23 at 2.02.52 PM.jpeg" alt="Fortinet"></td><td>Fortinet</td><td>Global cybersecurity leader.</td><td>2024</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/CS/WhatsApp Image 2026-09-23 at 2.04.56 PM.jpeg" alt="Cybertracs"></td><td>Cybertracs</td><td>Security operations and monitoring.</td><td>2025</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/CS/WhatsApp Image 2026-09-23 at 2.05.47 PM.jpeg" alt="GUVI"></td><td>GUVI</td><td>EdTech platform for tech skills.</td><td>2026</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/CSBS/WhatsApp Image 2026-09-23 at 12.15.42 PM (1).jpeg" alt="RDPL"></td><td>RDPL</td><td>Business systems solutions.</td><td>2025</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/CSC/WhatsApp Image 2026-09-23 at 2.11.23 PM.jpeg" alt="ATRIBS"></td><td>ATRIBS</td><td>Software consulting group.</td><td>2025</td><td><span class="status s-green">Active</span></td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
-        <!-- ECE -->
-        <div class="dept-box" id="box-ECE">
-          <div class="dept-box-header" onclick="toggleDeptBox('box-ECE')">
-            <div class="dept-icon-circle"><img src="Images/ece-icon.jpg" alt="ECE Icon" class="dept-custom-icon"></div>
-            <h4>ECE</h4>
-            <div class="close-hint">Click to expand</div>
-          </div>
-          <div class="dept-expand-content">
-            <div class="table-container">
-              <table class="mou-table">
-                <thead><tr><th>Logo</th><th>Company</th><th>About</th><th>MoU Signed</th><th>Status</th></tr></thead>
-                <tbody>
-                  <tr><td><img src="Images/ECE/WhatsApp Image 2026-09-23 at 1.42.24 PM.jpeg" alt="Nasscom Foundation"></td><td>Nasscom Foundation</td><td>Tech industry association body.</td><td>2024</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/ECE/WhatsApp Image 2026-09-23 at 1.47.58 PM.jpeg" alt="BlueCloud"></td><td>BlueCloud</td><td>Cloud and communication networks.</td><td>2025</td><td><span class="status s-green">Active</span></td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
-        <!-- EEE -->
-        <div class="dept-box" id="box-EEE">
-          <div class="dept-box-header" onclick="toggleDeptBox('box-EEE')">
-            <div class="dept-icon-circle"><img src="Images/eee-icon.jpg" alt="EEE Icon" class="dept-custom-icon"></div>
-            <h4>EEE</h4>
-            <div class="close-hint">Click to expand</div>
-          </div>
-          <div class="dept-expand-content">
-            <div class="table-container">
-              <table class="mou-table">
-                <thead><tr><th>Logo</th><th>Company</th><th>About</th><th>MoU Signed</th><th>Status</th></tr></thead>
-                <tbody>
-                  <tr><td><img src="Images/EEE/Nasscon.jpeg" alt="Nasscom"></td><td>Nasscom</td><td>Tech industry association body.</td><td>2023</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/EEE/retech.jpeg" alt="Retech"></td><td>Retech Solutions</td><td>Electrical tech services.</td><td>2024</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/EEE/WhatsApp Image 2026-09-23 at 1.42.33 PM.jpeg" alt="Epical"></td><td>Epical Layouts</td><td>PCB and circuit layouts.</td><td>2024</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/EEE/WhatsApp Image 2026-09-23 at 1.42.33 PM (1).jpeg" alt="BeauRoi"></td><td>BeauRoi</td><td>Automation and manufacturing.</td><td>2025</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/EEE/WhatsApp Image 2026-09-23 at 1.42.33 PM (2).jpeg" alt="Elmec"></td><td>Elmec Speciality Heaters</td><td>Industrial heating solutions.</td><td>2025</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/EEE/WhatsApp Image 2026-09-23 at 1.42.33 PM (3).jpeg" alt="BSNL"></td><td>BSNL</td><td>Telecom network operator.</td><td>2023</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/EEE/WhatsApp Image 2026-09-23 at 1.42.34 PM.jpeg" alt="MiBot"></td><td>MiBot Ventures</td><td>Robotics hardware solutions.</td><td>2026</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/EEE/WhatsApp Image 2026-09-23 at 1.42.34 PM (2).jpeg" alt="BuSoft"></td><td>BuSoft Tech</td><td>Embedded systems tech.</td><td>2026</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/EEE/WhatsApp Image 2026-09-23 at 1.42.35 PM.jpeg" alt="AGIIT"></td><td>AGIIT</td><td>Industrial tech training.</td><td>2025</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/EEE/WhatsApp Image 2026-09-23 at 1.42.35 PM (1).jpeg" alt="IPCS Global"></td><td>IPCS Global</td><td>Industrial automation hub.</td><td>2024</td><td><span class="status s-green">Active</span></td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
-        <!-- IOT -->
-        <div class="dept-box" id="box-IOT">
-          <div class="dept-box-header" onclick="toggleDeptBox('box-IOT')">
-            <div class="dept-icon-circle"><img src="Images/iot-icon.jpg" alt="IoT Icon" class="dept-custom-icon"></div>
-            <h4>IoT</h4>
-            <div class="close-hint">Click to expand</div>
-          </div>
-          <div class="dept-expand-content">
-            <div class="table-container">
-              <table class="mou-table">
-                <thead><tr><th>Logo</th><th>Company</th><th>About</th><th>MoU Signed</th><th>Status</th></tr></thead>
-                <tbody>
-                  <tr><td><img src="Images/IOT/WhatsApp Image 2026-09-23 at 12.15.42 PM.jpeg" alt="XYMA"></td><td>XYMA Analytics</td><td>Industrial IoT and sensor tech.</td><td>2025</td><td><span class="status s-green">Active</span></td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
-        <!-- IT -->
-        <div class="dept-box" id="box-IT">
-          <div class="dept-box-header" onclick="toggleDeptBox('box-IT')">
-            <div class="dept-icon-circle"><img src="Images/it-icon.jpg" alt="Information Tech Icon" class="dept-custom-icon"></div>
-            <h4>Information Tech</h4>
-            <div class="close-hint">Click to expand</div>
-          </div>
-          <div class="dept-expand-content">
-            <div class="table-container">
-              <table class="mou-table">
-                <thead><tr><th>Logo</th><th>Company</th><th>About</th><th>MoU Signed</th><th>Status</th></tr></thead>
-                <tbody>
-                  <tr><td><img src="Images/IT/WhatsApp Image 2026-09-23 at 1.56.47 PM.jpeg" alt="Oracle"></td><td>Oracle</td><td>Global cloud and database leader.</td><td>2024</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/IT/WhatsApp Image 2026-09-23 at 12.18.39 PM.jpeg" alt="Snowflake"></td><td>Snowflake</td><td>Cloud data platform.</td><td>2025</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/IT/WhatsApp Image 2026-09-23 at 12.21.46 PM.jpeg" alt="Genesys"></td><td>Genesys</td><td>Customer experience software.</td><td>2024</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/IT/WhatsApp Image 2026-09-23 at 12.21.46 PM (2).jpeg" alt="MongoDB"></td><td>MongoDB</td><td>NoSQL database technology.</td><td>2025</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/IT/WhatsApp Image 2026-09-23 at 12.21.46 PM (3).jpeg" alt="NIELIT"></td><td>NIELIT</td><td>National tech certification.</td><td>2026</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/IT/WhatsApp Image 2026-09-23 at 12.21.46 PM (4).jpeg" alt="Samsung Research"></td><td>Samsung Research</td><td>R&amp;D center for Samsung electronics.</td><td>2023</td><td><span class="status s-green">Active</span></td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
-        <!-- Mech -->
-        <div class="dept-box" id="box-Mech">
-          <div class="dept-box-header" onclick="toggleDeptBox('box-Mech')">
-            <div class="dept-icon-circle"><img src="Images/mech-icon.jpg" alt="Mechanical Engineering Icon" class="dept-custom-icon"></div>
-            <h4>Mechanical</h4>
-            <div class="close-hint">Click to expand</div>
-          </div>
-          <div class="dept-expand-content">
-            <div class="table-container">
-              <table class="mou-table">
-                <thead><tr><th>Logo</th><th>Company</th><th>About</th><th>MoU Signed</th><th>Status</th></tr></thead>
-                <tbody>
-                  <tr><td><img src="Images/Mech/WhatsApp Image 2026-09-23 at 12.08.47 PM.jpeg" alt="TU Kosice"></td><td>Technical University of Košice</td><td>International academic collaboration.</td><td>2023</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/Mech/WhatsApp Image 2026-09-23 at 12.08.47 PM (1).jpeg" alt="EMLR"></td><td>EMLR</td><td>Mechanical R&amp;D solutions.</td><td>2024</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/Mech/WhatsApp Image 2026-09-23 at 12.08.47 PM (2).jpeg" alt="Zikshaa"></td><td>Zikshaa</td><td>Skill training in engineering.</td><td>2025</td><td><span class="status s-green">Active</span></td></tr>
-                  <tr><td><img src="Images/Mech/WhatsApp Image 2026-09-23 at 12.08.47 PM (3).jpeg" alt="CMTI"></td><td>Central Mfg Technology Institute</td><td>Advanced manufacturing tech.</td><td>2026</td><td><span class="status s-green">Active</span></td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
-        <!-- Physics -->
-        <div class="dept-box" id="box-Physics">
-          <div class="dept-box-header" onclick="toggleDeptBox('box-Physics')">
-            <div class="dept-icon-circle"><img src="Images/physics-icon.jpg" alt="Physics Icon" class="dept-custom-icon"></div>
-            <h4>Physics</h4>
-            <div class="close-hint">Click to expand</div>
-          </div>
-          <div class="dept-expand-content">
-            <div class="table-container">
-              <table class="mou-table">
-                <thead><tr><th>Logo</th><th>Company</th><th>About</th><th>MoU Signed</th><th>Status</th></tr></thead>
-                <tbody>
-                  <tr><td><img src="Images/Physics/WhatsApp Image 2026-09-23 at 2.09.18 PM.jpeg" alt="IISc"></td><td>Indian Institute of Science</td><td>Premier scientific research institution.</td><td>2024</td><td><span class="status s-green">Active</span></td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
+        <!-- Cards injected dynamically by script.js from mous-data.js -->
       </div><!-- end dept-card-grid -->
+
     </div>
   </section>
 
-  <!-- ===== PARTNERS MARQUEE ===== -->
-  <section class="section partners" id="partners">
-    <div class="container">
-      <div class="section-header">
-        <div class="accent-line"></div>
-        <h2>Industry Connect &amp; Partners</h2>
-        <p>Collaborating with leading organizations for student success</p>
-      </div>
-    </div>
-    <div class="marquee-wrapper">
-      <div class="marquee-track marquee-left">
-        <div class="marquee-content">
-          <div class="partner-logo"><img src="Images/AIML/WhatsApp Image 2026-09-23 at 12.13.36 PM.jpeg" alt="Intel"></div>
-          <div class="partner-logo"><img src="Images/AIML/WhatsApp Image 2026-09-23 at 12.13.44 PM (1).jpeg" alt="Kanini"></div>
-          <div class="partner-logo"><img src="Images/CS/WhatsApp Image 2026-09-23 at 2.02.52 PM.jpeg" alt="Fortinet"></div>
-          <div class="partner-logo"><img src="Images/IT/WhatsApp Image 2026-09-23 at 1.56.47 PM.jpeg" alt="Oracle"></div>
-          <div class="partner-logo"><img src="Images/IT/WhatsApp Image 2026-09-23 at 12.18.39 PM.jpeg" alt="Snowflake"></div>
-          <div class="partner-logo"><img src="Images/EEE/Nasscon.jpeg" alt="Nasscom"></div>
-          <div class="partner-logo"><img src="Images/Mech/WhatsApp Image 2026-09-23 at 12.08.47 PM.jpeg" alt="TU Kosice"></div>
-        </div>
-        <div class="marquee-content" aria-hidden="true">
-          <div class="partner-logo"><img src="Images/AIML/WhatsApp Image 2026-09-23 at 12.13.36 PM.jpeg" alt="Intel"></div>
-          <div class="partner-logo"><img src="Images/AIML/WhatsApp Image 2026-09-23 at 12.13.44 PM (1).jpeg" alt="Kanini"></div>
-          <div class="partner-logo"><img src="Images/CS/WhatsApp Image 2026-09-23 at 2.02.52 PM.jpeg" alt="Fortinet"></div>
-          <div class="partner-logo"><img src="Images/IT/WhatsApp Image 2026-09-23 at 1.56.47 PM.jpeg" alt="Oracle"></div>
-          <div class="partner-logo"><img src="Images/IT/WhatsApp Image 2026-09-23 at 12.18.39 PM.jpeg" alt="Snowflake"></div>
-          <div class="partner-logo"><img src="Images/EEE/Nasscon.jpeg" alt="Nasscom"></div>
-          <div class="partner-logo"><img src="Images/Mech/WhatsApp Image 2026-09-23 at 12.08.47 PM.jpeg" alt="TU Kosice"></div>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   <!-- ===== IMPACT ===== -->
   <section class="section impact" id="impact">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header reveal">
         <div class="accent-line"></div>
         <h2>Our Milestones</h2>
         <p>Strategic Industry &amp; Academic Collaborations driving impact</p>
       </div>
       <div class="impact-grid">
-        <div class="impact-item"><div class="impact-number" data-target="50" data-suffix="+">0</div><div class="impact-label">Total Active MoUs</div></div>
-        <div class="impact-item"><div class="impact-number" data-target="12" data-suffix="+">0</div><div class="impact-label">International Collaborations</div></div>
-        <div class="impact-item"><div class="impact-number" data-target="20" data-suffix="+">0</div><div class="impact-label">Industry Partners</div></div>
-        <div class="impact-item"><div class="impact-number" data-target="8" data-suffix="+">0</div><div class="impact-label">Academic Institution Partners</div></div>
-        <div class="impact-item"><div class="impact-number" data-target="625" data-suffix="+">0</div><div class="impact-label">Recruiters on Campus</div></div>
-        <div class="impact-item"><div class="impact-number" data-target="6" data-suffix="">0</div><div class="impact-label">Centres of Excellence</div></div>
+        <div class="impact-item reveal-scale delay-1">
+          <img src="Images/milestones/icon-cert.png" alt="MoU Certificate Icon" class="impact-icon-img">
+          <div class="impact-number" data-target="50" data-suffix="+">0</div>
+          <div class="impact-label">Total Active MoUs</div>
+        </div>
+        <div class="impact-item reveal-scale delay-2">
+          <img src="Images/milestones/icon-globe.png" alt="Globe Icon" class="impact-icon-img">
+          <div class="impact-number" data-target="12" data-suffix="+">0</div>
+          <div class="impact-label">International Collaborations</div>
+        </div>
+        <div class="impact-item reveal-scale delay-3">
+          <img src="Images/milestones/icon-building.png" alt="Industry Building Icon" class="impact-icon-img">
+          <div class="impact-number" data-target="20" data-suffix="+">0</div>
+          <div class="impact-label">Industry Partners</div>
+        </div>
+        <div class="impact-item reveal-scale delay-4">
+          <img src="Images/milestones/icon-academic.png" alt="Academic Pillar Icon" class="impact-icon-img">
+          <div class="impact-number" data-target="8" data-suffix="+">0</div>
+          <div class="impact-label">Academic Institution Partners</div>
+        </div>
+        <div class="impact-item reveal-scale delay-5">
+          <img src="Images/milestones/icon-recruiter.png" alt="Recruiter Resume Icon" class="impact-icon-img">
+          <div class="impact-number" data-target="625" data-suffix="+">0</div>
+          <div class="impact-label">Recruiters on Campus</div>
+        </div>
+        <div class="impact-item reveal-scale delay-6">
+          <img src="Images/milestones/icon-building.png" alt="CoE Building Icon" class="impact-icon-img">
+          <div class="impact-number" data-target="6" data-suffix="">0</div>
+          <div class="impact-label">Centres of Excellence</div>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- ===== MOU SIGNING PHOTO LIGHTBOX MODAL ===== -->
+  <div id="mou-photo-modal" role="dialog" aria-modal="true" aria-labelledby="mou-modal-title">
+    <div class="mou-modal-box">
+      <div class="mou-modal-header">
+        <h3 id="mou-modal-title">MoU Signing Ceremony</h3>
+        <button class="mou-modal-close" onclick="closeMouModal()" aria-label="Close modal">✕</button>
+      </div>
+      <div class="mou-modal-img-wrap">
+        <button class="mou-modal-nav mou-modal-prev" id="mou-prev-btn" onclick="prevMouPhoto()"
+          aria-label="Previous photo">‹</button>
+        <img id="mou-modal-img" src="" alt="MoU Signing Photo">
+        <button class="mou-modal-nav mou-modal-next" id="mou-next-btn" onclick="nextMouPhoto()"
+          aria-label="Next photo">›</button>
+      </div>
+      <div id="mou-modal-thumbnails" class="mou-thumbnails-grid"></div>
+      <p class="mou-modal-footer-note">Press <kbd
+          style="background:rgba(255,255,255,0.1);padding:2px 6px;border-radius:4px;font-size:0.75rem">Esc</kbd> or
+        click outside to close</p>
+    </div>
+  </div>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
@@ -455,6 +415,17 @@
     </div>
   </footer>
 
+  <!-- ===== BACK TO TOP FLOATING BUTTON ===== -->
+  <button id="back-to-top" aria-label="Back to top">
+    <svg class="progress-ring" width="48" height="48" viewBox="0 0 48 48">
+      <circle class="progress-ring-circle" stroke="var(--accent)" stroke-width="3" fill="transparent" r="20" cx="24"
+        cy="24" />
+    </svg>
+    <span class="arrow-icon">↑</span>
+  </button>
+
+  <script src="mous-data.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
