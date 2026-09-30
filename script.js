@@ -151,18 +151,31 @@ function updateMouModalContent() {
   const thumbContainer = document.getElementById('mou-modal-thumbnails');
   const prevBtn = document.getElementById('mou-prev-btn');
   const nextBtn = document.getElementById('mou-next-btn');
+  const counter = document.getElementById('mou-photo-counter');
 
   if (!img) return;
 
   const currentSrc = currentMouPhotos[currentMouIndex] || '';
-  img.src = currentSrc;
-  img.alt = currentMouPartner + ' MoU Signing Photo ' + (currentMouIndex + 1);
+
+  // Fade-out, swap src, fade-in
+  img.classList.add('is-fading');
+  setTimeout(function() {
+    img.src = currentSrc;
+    img.alt = currentMouPartner + ' MoU Signing Photo ' + (currentMouIndex + 1);
+    img.classList.remove('is-fading');
+  }, 220);
 
   if (title) {
+    title.textContent = currentMouPartner;
+  }
+
+  // Photo counter
+  if (counter) {
     if (currentMouPhotos.length > 1) {
-      title.textContent = currentMouPartner + ' — MoU Signing Ceremony (' + (currentMouIndex + 1) + '/' + currentMouPhotos.length + ')';
+      counter.textContent = (currentMouIndex + 1) + ' / ' + currentMouPhotos.length;
+      counter.style.display = 'inline';
     } else {
-      title.textContent = currentMouPartner + ' — MoU Signing Ceremony';
+      counter.style.display = 'none';
     }
   }
 
@@ -567,5 +580,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closeMouModal();
+    if (e.key === 'ArrowLeft') prevMouPhoto();
+    if (e.key === 'ArrowRight') nextMouPhoto();
   });
 });
